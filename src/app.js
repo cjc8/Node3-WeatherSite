@@ -12,6 +12,7 @@ console.log(path.join(__dirname, '..\\public'))
 
 
 const app = express()
+const port = process.env.PORT || 3000
 
 
 
@@ -109,6 +110,6 @@ app.get('*', (req, res) => {
 //app.com/help
 //app.com/about
 
-app.listen(3000, () => {
-    console.log('Server up and running')
+app.listen(port, () => {
+    console.log('Server up and running on '+ port)
 })
