@@ -4,7 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+<<<<<<< HEAD
     "start": "node ./src/app.js"
+=======
+    "start": "node src/app.js"
+>>>>>>> 48eadfb292f4553275193ece61cf500ef1f3ed5d
   },
   "keywords": [],
   "author": "",
@@ -12,6 +16,7 @@
   "dependencies": {
     "express": "^4.16.4",
     "hbs": "^4.0.1",
-    "postman-request": "^2.88.1-postman.22"
+    "postman-request": "^2.88.1-postman.22",
+    "socket.io": "^2.3.0"
   }
 }
