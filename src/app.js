@@ -25,7 +25,7 @@ app.set('view engine', 'hbs')
 hbs.registerPartials(partialsPath)
 
 // Setup static directory to serve
-app.use(express.static(path.join(__dirname, '..\\public')))
+app.use(express.static(path.join(__dirname, '../public')))
 
 
 
