@@ -11,13 +11,11 @@ const forecast = (lat, long, callback) => {
         else {
             const current = body.current
             var description = current.weather_descriptions[0] + '. '
-            if (description) {
-                description = ""
-            }
             const temp = current.temperature
             const feelsLike = current.feelslike
+            const precip = current.precip
 
-            callback(undefined, description + 'Current temperature is ' + temp + ' degrees. It feels like ' + feelsLike + ' degrees.')
+            callback(undefined, description + 'Current temperature is ' + temp + ' degrees. It feels like ' + feelsLike + ' degrees, with a ' + precip + '% chance of rain.')
         }
     })
 }
